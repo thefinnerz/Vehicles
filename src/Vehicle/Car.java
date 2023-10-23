@@ -11,10 +11,8 @@ public class Car implements Motion {
         mileage=40;
     }
 
-    public Car(String make, String model, int mileage){
+    public Car(String make){
         this.make = make;
-        this.model = model;
-        this.mileage = mileage;
     }
 
     @Override
