@@ -4,11 +4,11 @@ import Vehicle.RaceCar;
 public class Main {
     public static void main(String[] args) {
 
-        Car[] vehicles = {new RaceCar(), new RaceCar()};
+        Car[] vehicles = {new Car(), new RaceCar()};
 
-        for ( int i = 0; i < vehicles.length; i ++ ){
-            System.out.println(vehicles[i].make);
-            vehicles[i].Drive();
+        for (Car vehicle : vehicles){
+            System.out.println(vehicle.make);
+            vehicle.Drive();
         }
     }
 }

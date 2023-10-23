@@ -1,6 +1,6 @@
 package Vehicle;
 
-public class RaceCar extends Car {
+public class RaceCar extends Car implements Motion {
     public RaceCar() {
         make = "RaceCar";
         model = "F1";

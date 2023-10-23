@@ -1,6 +1,6 @@
 package Vehicle;
 
-public abstract class Car {
+public class Car implements Motion {
     public String make;
     public String model;
     public int mileage;
@@ -17,5 +17,8 @@ public abstract class Car {
         this.mileage = mileage;
     }
 
-    public abstract void Drive();
+    @Override
+    public void Drive() {
+        System.out.println("You drivin now boi");
+    }
 }
